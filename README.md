@@ -27,7 +27,7 @@ By default driconf will be installed into various sub-directories under
 /usr/local. You can change this behaviour in setup.cfg. In that case
 you may also have to adjust the driconf start-up script accordingly.
 
-To start the installation run the following command as root:
+To start the installation run the following command as root from within the cloned directory:
 
 
     python setup.py install
