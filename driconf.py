@@ -43,8 +43,12 @@ from driconf_commonui import _
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Customize performance and visual quality settings of OpenGL drivers on a per-driver, per-screen and/or per-application level.')
-    parser.add_argument("-e", "--expert", help="Start driconf in Expert Mode", action="store_true", dest="expertui")
+    parser = argparse.ArgumentParser(
+        description=
+        'Customize performance and visual quality settings of OpenGL drivers on a per-driver,\
+        per-screen and/or per-application level.')
+    parser.add_argument("-e", "--expert", help="Start driconf in Expert Mode",
+                        action="store_true", dest="expertui")
     args = parser.parse_args()
     expert = args.expertui
 

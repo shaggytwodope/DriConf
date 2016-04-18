@@ -60,7 +60,8 @@ def XDriInfo(argStr, dpy=None):
         if signal != 0:
             raise DRIError("XDriInfo killed by signal " + signal + ".")
         elif status == 127:
-            raise DRIError("XDriInfo not found.")
+            raise DRIError("XDriInfo not found.\n"
+                           "Please locate and install the package xdriinfo.")
         else:
             raise DRIError("XDriInfo returned with non-zero exit code.")
     return driInfo
